@@ -1,19 +1,13 @@
 package com.unipi.ipap.domaincrawler.service;
 
-import com.unipi.ipap.appcommons.model.AppUser;
 import com.unipi.ipap.appcommons.model.Domain;
 import com.unipi.ipap.appcommons.model.DomainList;
-import io.netty.resolver.DefaultAddressResolverGroup;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.netty.http.client.HttpClient;
-
-import java.net.URI;
-import java.util.Arrays;
 
 @Slf4j
 @Service
