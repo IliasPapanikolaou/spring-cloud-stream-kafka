@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  cloud:
+    stream:
+      function:
+        definition: domainService
+      bindings:
+        domainService-in-0:
+          destination: active-web-domains
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
