@@ -37,14 +37,5 @@ public class DomainCrawlerService {
                              kafkaTemplate.send(KAFKA_TOPIC, domain);
                              log.info("Domain message: {}", domain.getDomain());
                          }));
-
-//        webClient.baseUrl("https://jsonplaceholder.typicode.com/").build()
-//                .get()
-//                .uri("/users")
-//                .retrieve()
-//                .bodyToMono(AppUser[].class)
-//                .subscribe(appUsers -> Arrays.stream(appUsers)
-//                        .forEach(user -> System.out.println(user.getName())));
-
     }
 }
